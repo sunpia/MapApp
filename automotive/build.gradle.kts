@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.demo.mapapp"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.demo.mapapp"
         minSdk = 33
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -42,4 +42,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.ui.androidauto)
+    implementation(libs.androidx.app)
+
 }
